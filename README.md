@@ -28,4 +28,26 @@ Vision-based emergent communication (EC) aims to learn to communicate through sk
 </div>
 
 
-Comming soon.
+# Prerequistites
+
+## Download [VQAV2](https://visualqa.org)
+
+## Install [MCAN-VQA](https://github.com/MILVLG/mcan-vqa.git) requirements.
+
+## [Install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html):
+
+## Install [Bottom-Up-Attention](https://github.com/peteanderson80/bottom-up-attention)
+
+## Install [Apex](https://github.com/NVIDIA/apex)
+
+## Install [CLIP](https://github.com/openai/CLIP)
+
+
+## Install ECISQA requirement:
+```
+conda env create -f envs/env.yml
+conda activate detect_sketch
+cd CLIP-main
+python setup.py install
+pip install -r envs/requirements.txt
+```

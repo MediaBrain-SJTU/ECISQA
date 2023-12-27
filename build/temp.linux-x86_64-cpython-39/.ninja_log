@@ -1,0 +1,7 @@
+# ninja log v5
+1	14320	1675495632175017011	/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/build/temp.linux-x86_64-cpython-39/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/bua/caffe/modeling/layers/csrc/nms/nms.o	3d2ba86b9e14921a
+1	15740	1675495633606351534	/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/build/temp.linux-x86_64-cpython-39/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/bua/caffe/modeling/layers/csrc/nms/nms_cpu.o	8b92d08fd0933846
+2	16231	1675495634099096859	/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/build/temp.linux-x86_64-cpython-39/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/bua/caffe/modeling/layers/csrc/vision.o	e2bf658558cafb52
+7	14913	1675495649923854596	/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/build/temp.linux-x86_64-cpython-39/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/bua/caffe/modeling/layers/csrc/nms/nms.o	d110fd1ed4b0aad6
+8	15977	1675495650995897093	/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/build/temp.linux-x86_64-cpython-39/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/bua/caffe/modeling/layers/csrc/vision.o	7f2d4fc678fbadd0
+7	15998	1675495651018211375	/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/build/temp.linux-x86_64-cpython-39/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/bua/caffe/modeling/layers/csrc/nms/nms_cpu.o	22a1f229873d7b8b

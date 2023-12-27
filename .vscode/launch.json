@@ -1,0 +1,160 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                // "/dssg/home/acct-seecsh/seecsh/zxlei/code/SketchesVQA/experiments/HPC/train_yml/round2/train_Fixed_sender_Round2.yml"
+                // "experiments/HPC/eval_yaml/round1/Eval_Fixed_sender_Round1_BW6.yml",
+                "experiments/HPC/eval_yaml/round2/Eval_Fixed_sender_Round2_BW5.yml",
+                // "experiments/HPC/eval_yaml/PragGeo5/eval_praggeo5_BW0.yml",
+                // "experiments/HPC/eval_yaml/Pragmatic_Sender/train_pragmatic_BW0.yml",
+                // "experiments/HPC/eval_yaml/round2/Eval_Fixed_sender_Round2_BW6.yml",
+                // "experiments/HPC/eval_yaml/PragGeo5/eval_praggeo5_BW4.yml",
+                // "experiments/HPC/train_yml/pragmatic/train_pragmatic_5.yml",
+                // "cfgs/saved_yaml/round2.yml",
+                // "cfgs/saved_yaml/Geodec.yml",
+                // "/dssg/home/acct-seecsh/seecsh/zxlei/code/SketchesVQA/experiments/HPC/train_yml/round2/train_Fixed_sender_Round2.yml",
+                // "/remote-home/zxlei/code/SketchesVQA/experiments/DBCloud/eval_yaml/Informative_Sender_VQA/Informative_VQA_eval.yml",
+                // "/remote-home/zxlei/code/SketchesVQA/experiments/DBCloud/eval_yaml/PragGeo/PragGeo.yml",
+                // "/dssg/home/acct-seecsh/seecsh/zxlei/code/SketchesVQA/experiments/HPC/train_yml/pragmatic/train_pragmatic_debug.yml",
+                // "/GPFS/data/zxlei/Sketch/InteractiveSketch/sketchesVQA/SketchesVQA/experiments/DB/eval_yaml/Geometric_Sender_Only_7577439/ymls/eval_epoch22.yml",
+                // "experiments/HPC/eval_yaml/Pragmatic_Sender/train_pragmatic_BW4.yml",
+                // "--DDP",
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "1"}
+        },
+
+        {
+            "name": "train_round2",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                // "experiments/HPC/train_yml/round2from0/train_Fixed_sender_Round2_SR_from0.yml",
+                // "experiments/HPC/train_yml/round2from0/train_Fixed_sender_Round2_SR_from0_1gpu.yml"
+                "/dssg/home/acct-seecsh/seecsh/zxlei/code/SketchesVQA/experiments/HPC/train_yml/round2from0/train_Fixed_sender_Round2_SR_from0.yml",
+                "--DDP"
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0,1,2,3"},
+            
+        },
+
+        {
+            "name": "train_round2_noDDP",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                // "experiments/HPC/train_yml/round2from0/train_Fixed_sender_Round2_SR_from0.yml",
+                "experiments/HPC/train_yml/round2from0/train_Fixed_sender_Round2_SR_from0_1gpu.yml",
+                "--DDP"
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0"},
+            
+        },        
+        
+        {
+            "name": "infer_round_prag",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                "experiments/HPC/eval_yaml/Pragmatic_Sender/train_pragmatic_BW5.yml"
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0"}
+        },
+
+
+        {
+            "name": "infer_round2",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                "/dssg/home/acct-seecsh/seecsh/zxlei/code/SketchesVQA/experiments/HPC/eval_yaml/Fixed_GeoSenderRound2_SR_VQA/20/eval_Fixed_GeoSenderRound2_VQA_SR_BW7.yml"
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0"}
+        },
+
+        {
+            "name": "infer_round2_SR",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                "experiments/HPC/eval_yaml/Fixed_GeoSenderRound2_SR_new/25/eval_Fixed_sender_Round2_25_BW7.yml"
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0"}
+        },
+
+        {
+            "name": "infer_round3",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                "experiments/HPC/eval_yaml/Fixed_GeoSenderRound3_SR_VQA/22/eval_Fixed_GeoSenderRound3_VQA_SR_BW1.yml"
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0"}
+        },
+
+        {
+            "name": "Python: runeval-agrtkx",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                "experiments/HPC-agrtkx/eval_yaml/round2/Eval_Fixed_sender_Round2_BW5.yml",
+
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "1"}
+        }
+    ]
+}
