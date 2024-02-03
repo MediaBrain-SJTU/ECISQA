@@ -30,17 +30,17 @@ Vision-based emergent communication (EC) aims to learn to communicate through sk
 
 # Prerequistites
 
-## Download [VQAV2](https://visualqa.org)
+Download [VQAV2](https://visualqa.org)
 
-## Install [MCAN-VQA](https://github.com/MILVLG/mcan-vqa.git) requirements.
+Install [MCAN-VQA](https://github.com/MILVLG/mcan-vqa.git) requirements.
 
-## [Install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html):
+[Install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html):
 
-## Install [Bottom-Up-Attention](https://github.com/peteanderson80/bottom-up-attention)
+Install [Bottom-Up-Attention](https://github.com/peteanderson80/bottom-up-attention)
 
-## Install [Apex](https://github.com/NVIDIA/apex)
+Install [Apex](https://github.com/NVIDIA/apex)
 
-## Install [CLIP](https://github.com/openai/CLIP)
+Install [CLIP](https://github.com/openai/CLIP)
 
 
 ## Install ECISQA requirement:
@@ -51,3 +51,14 @@ cd CLIP-main
 python setup.py install
 pip install -r envs/requirements.txt
 ```
+
+
+## checkpoints
+please download 'anime_style/netG_A_latest.pth' in [informative drawing](https://github.com/carolineec/informative-drawings).
+download the detector in this [link](https://pan.baidu.com/s/1qsy2dgAmwaMtp67Y5-_z-w?pwd=umga) with passworkd umga and put it in ckpts.
+download the vqa model in this [link](https://pan.baidu.com/s/1IZedRCq9RVjyMXOGDmcRpw?pwd=dts7) with password dts7 and put it in ckpts/example.
+
+
+## running demo
+
+python run.py --yaml example_sh/example_sh.yml

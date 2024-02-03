@@ -9,7 +9,3 @@
 1. Image encoder come from CLIP/Fast-RCNN(Pre-trained)
 2. Text encoder from GloVe+ LSTM
 3. Multi-modality fusion and answering
-
-## Backbone Model
-
-## 

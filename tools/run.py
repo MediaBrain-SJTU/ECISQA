@@ -1,7 +1,4 @@
 import sys
-sys.path.append("/remote-home/zxlei/code/SketchesVQA") # Line1 and Line2 are Used in DB Cloud
-sys.path.append("/dssg/home/acct-seecsh/seecsh/zxlei/code/SketchesVQA") # Line3 are Used in HPC
-sys.path.append("/dssg/home/acct-eezy/eezy-user1/zxlei/code/SketchesVQA") # Line4 are Used in HPC-eezy
 import torch
 from cfgs.base_cfgs import Cfgs
 from tools.game import Game
@@ -42,13 +39,6 @@ if __name__ == '__main__':
             config_yaml['SETTING']['BATCH_SIZE'] = 1
     __C = Cfgs(config_yaml['SETTING'])
 
-    # args_dict = __C.parse_to_dict(config_yaml['SETTING'])
-
-    # cfg_file = "cfgs/{}_model.yml".format(args.MODEL)
-    # with open(cfg_file, 'r') as f:
-        # yaml_dict = yaml.load(f)
-
-    # args_dict = {**config_yaml['MODEL'], **args_dict}
     args_dict = {**config_yaml['MODEL'],**config_yaml['SETTING']}
     __C.add_args(args_dict)
     __C.proc()

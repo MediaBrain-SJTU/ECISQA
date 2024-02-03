@@ -155,6 +155,23 @@
 
             ],
             "env": {"CUDA_VISIBLE_DEVICES": "1"}
+        },
+
+        {
+            "name": "github_test",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                // "--version",
+                // "85996639"
+                "--yaml",
+                "example_sh/example_sh.yml",
+
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "0"}
         }
     ]
 }
